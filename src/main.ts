@@ -33,14 +33,11 @@ function Main()
 
 function jump()
 {
-    if(gameOver === false)
+    if(gameOver === false && isJumping == false)
     {
-        if(isJumping == false)
-        {
-            isJumping = true
-            dino?.classList.add("jump")
-            setTimeout(RemoveJump, 500)
-        }
+        isJumping = true
+        dino?.classList.add("jump")
+        setTimeout(RemoveJump, 500)
     }
     else
     {
