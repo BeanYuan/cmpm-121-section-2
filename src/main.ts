@@ -21,7 +21,7 @@ setInterval(function () { Main()}, 10)
 
 function Main()
 {
-    if(gameOver == false)
+    if(gameOver)
     {
         score = score + 1;
         SetText("Score: " + score)
